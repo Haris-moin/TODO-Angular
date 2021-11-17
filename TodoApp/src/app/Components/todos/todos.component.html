@@ -1,0 +1,17 @@
+<div class="todos">
+    <h2 id="todoHeading">Todos</h2>
+    <form (submit)="addTodo()">
+        <input 
+        type="text" 
+        name="inputTodo" 
+        placeholder="Enter todo ...."
+        class="todo-input"
+        required
+        [(ngModel)]="inputTodo"
+        />
+        <input type="submit" value="submit" class="todo-submit">
+    </form>
+    <div *ngFor="let todo of todos; let i=index;" class="todo" >
+     <app-todo [todoItem]="todo"  [indexItem]="i" (modifyEvent)="modifyTodo($event)"></app-todo>
+    </div>
+</div>

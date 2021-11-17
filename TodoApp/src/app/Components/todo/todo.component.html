@@ -1,0 +1,21 @@
+<div class="todo-component">
+    <div class="todo-itmes"><!-- <div class="id">{{i}}</div> -->
+    <input id="checkbox" type="checkbox" (click)="modifyItem(todoItem.id,'check',editTodo,indexItem)">
+   
+     <div class="content">
+         <input type="text" class="input-list"  [(ngModel)]="editTodo" [disabled]="isDisabled" value="{{todoItem.content}}"/>
+        </div>
+  </div>
+      <div class="btn">
+          <button mat-icon-button class="edit" (click)="edit()" *ngIf="isDisabled">
+            
+              <mat-icon >edit</mat-icon>
+          </button>
+          <button mat-icon-button class="save" (click)="modifyItem(todoItem.id,'edit',editTodo,indexItem)"  *ngIf="!isDisabled">
+           
+              <mat-icon >save</mat-icon>
+          </button>
+          <button mat-icon-button class="delete" (click)="modifyItem(todoItem.id,'delete')"> <mat-icon>delete</mat-icon></button>
+         
+      </div>
+</div>

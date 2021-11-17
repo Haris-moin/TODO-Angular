@@ -1,0 +1,55 @@
+
+.todos{
+    width: 70%;
+    margin: 20px;
+    border:1px solid rgb(194, 194, 194);
+}
+#todoHeading{
+    background-color: rgb(206, 206, 206);
+    padding: 20px;
+}
+
+
+.todo{
+    width: 100%;
+}
+input:focus{
+    outline: solid 1px black;
+    background-color: rgb(238, 235, 237);
+}
+
+.todo:nth-child(odd){
+    background-color: rgb(218, 218, 218);
+    border: none;
+    
+}
+.todo-submit{
+    border: none;
+    background-color: rgb(45, 98, 255);
+    padding: 10px;
+    border-radius:0px 8px 8px 0px;
+    color: white;
+    font-size: 17px;
+    width: 14%;
+}
+.todo-input{
+ 
+   height: 35px;
+    width: 84%;
+}
+.todo-input:focus{
+    border: none;
+}
+/* .todo .id{
+    flex: 1 1 50px;
+} */
+/* .todo .content{
+    flex: 1 1 100%;
+} */
+/* .todo.done .content{
+    text-decoration: line-through;
+} */
+
+form{
+    margin: 20px;
+}
